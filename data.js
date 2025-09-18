@@ -1,65 +1,84 @@
-// js/data.js
-
-const config = {
-    // Nama Pengantin
-    groomName: "anwar kholili",
-    brideName: "amalia pratama",
-    coupleName: "anwar & lia",
+// Wedding Invitation Configuration
+const weddingData = {
+    // Basic Information
+    groom: {
+        name: "Rizky",
+        fullName: "Ahmad Rizky Pratama",
+        father: "Bapak Suharto",
+        mother: "Ibu Siti Aminah",
+        photo: "images/cowo.png"
+    },
+    bride: {
+        name: "Dewi", 
+        fullName: "Sari Dewi Lestari",
+        father: "Bapak Wahyu Santoso",
+        mother: "Ibu Nur Hasanah",
+        photo: "images/cewe.png"
+    },
     
-    // Informasi Orang Tua
-    groomParents: "Bapak H. Suryo & Ibu Hj. Lestari",
-    brideParents: "Bapak Wijoyo & Ibu Hartati",
-
-    // Teks & Tombol
-    introText: "Kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami.",
-    buttonText: "Buka Undangan",
+    // Couple Photo
+    couplePhoto: "images/couple.png",
     
-    // Detail Acara
-    // Format Tanggal: 'YYYY-MM-DDTHH:mm:ss' (contoh: '2025-12-31T10:00:00')
-    eventDate: '2025-10-26T09:00:00', 
-    timezone: 'Asia/Jakarta', // Ganti sesuai zona waktu Anda (WIB: Asia/Jakarta, WITA: Asia/Makassar, WIT: Asia/Jayapura)
-
+    // Opening Text
+    openingText: "Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami.",
+    
+    // Event Details
     akadNikah: {
-        date: "Sabtu, 26 Oktober 2025",
-        time: "09:00 - 10:00 WIB",
-        location: "Masjid Istiqlal, Jakarta"
+        date: "2025-10-15",
+        time: "07:00",
+        location: "Masjid Al-Ikhlas",
+        address: "Jl. Mawar No. 123, Jakarta Selatan"
     },
-    resepsi: {
-        date: "Sabtu, 26 Oktober 2025",
-        time: "11:00 - 14:00 WIB",
-        location: "Gedung Balai Kartini, Jakarta"
+    
+    reception: {
+        date: "2025-10-15", 
+        time: "10:00",
+        location: "Grand Ballroom Hotel Sahid",
+        address: "Jl. Sudirman No. 456, Jakarta Pusat"
     },
-    googleMapsLink: "https://maps.app.goo.gl/abcdef1234567890", // Ganti dengan link Google Maps lokasi Anda
-
-    // Hadis Nabi
-    hadith: "“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.”",
-    hadithSource: "QS. Ar-Rum: 21",
-
-    // Pengaturan Fitur
-    musicEnabled: true, // true untuk aktif, false untuk nonaktif
-    musicFile: 'media/wedding.mp3', // Path ke file musik
     
-    fallingHeartsEnabled: true, // true untuk aktif, false untuk nonaktif
-
-    galleryEnabled: true, // true untuk aktif, false untuk nonaktif
-    galleryPhotoCount: 6, // Jumlah foto di galeri (pastikan nama file: gallery1.jpg, gallery2.jpg, dst.)
-
-    // Pengaturan Desain
-    themeColor: '#8B4513', // Warna tema utama (contoh: Coklat SaddleBrown)
-    fontJudul: "'Great Vibes', cursive", // Font untuk judul (contoh: Great Vibes, Playfair Display)
-    fontKonten: "'Poppins', sans-serif", // Font untuk konten (contoh: Poppins, Lato)
+    // Google Maps Link
+    mapsLink: "https://maps.google.com/?q=Grand+Ballroom+Hotel+Sahid+Jakarta",
     
-    // Footer
-    footerName: "Alfi Syuhadak",
-    footerTiktokUsername: "alfisyuhadak",
+    // Theme Configuration
+    theme: {
+        primaryColor: "#DE009F", // Dark Green 2c5f41
+        secondaryColor: "#8FBC8F", // Light Green
+        accentColor: "#DAA520", // Golden F8F8FF
+        backgroundColor: "transparent", //#DE009F
+        backgroundImage: "images/cover.jpg" // tambahin ini
+    },
+    
+    // Font Configuration
+    fonts: {
+        heading: "'Playfair Display', serif",
+        body: "'Source Sans Pro', sans-serif"
+    },
+    
+    // Features Toggle
+    features: {
+        backgroundMusic: true,
+        loveEffects: true,
+        photoGallery: true,
+        countdown: true
+    },
+    
+    // Photo Gallery
     gallery: [
-    "media/1.png",
-    "media/2.png",
-    "media/3.png",
-    "media/4.png",
-    "media/5.png",
-    "media/6.png"
-   ],
-
+        "images/1.png",
+        "images/2.png", 
+        "images/3.png",
+        "images/4.png",
+        "images/5.png",
+        "images/6.png"
+    ],
+    
+    // Islamic Hadith
+    hadith: {
+        text: "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang.",
+        source: "QS. Ar-Rum: 21"
+    },
+    
+    // Timezone
+    timezone: "Asia/Jakarta"
 };
-
